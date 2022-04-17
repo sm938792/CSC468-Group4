@@ -1,1 +1,3 @@
-#created empty dockerfile for discordbot
+FROM node:4-slim
+RUN npm install mongoose
+CMD ["node", "."]
