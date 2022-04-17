@@ -25,5 +25,13 @@ client.on("messageCreate", (message) => {
     }
 })
 
+mongoose.connect(process.env.MONGODB_SRV)
+.then(() => {
+    console.log('Database connected'); //temporary for testing
+})
+.catch((err) => {
+    console.log(err); //error catching for testing
+});
+
 // Bot login
 client.login(process.env.TOKEN);
