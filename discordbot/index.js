@@ -1,8 +1,8 @@
 // Puts discord.js package info into a variable
-const Discord = require("discord.js")
+const Discord = require("discord.js");
 
 // .env variables into a global variable with process.env
-require("dotenv").config()
+require("dotenv").config();
 
 // Creates bot client to access Discord API
 const client = new Discord.Client({
@@ -10,12 +10,14 @@ const client = new Discord.Client({
         "GUILDS", // Guilds are Discord Servers
         "GUILD_MESSAGES" // Things to look out for
     ]
-})
+});
+
+const mongoose = require('mongoose');
 
 // Ready Event Listener - triggers when bot login is successful
 client.on("ready", () => {
     console.log(`${client.user.tag} login successful`)
-})
+});
 
 client.on("messageCreate", (message) => {
     if(message.content == "Hi!") {
@@ -24,4 +26,4 @@ client.on("messageCreate", (message) => {
 })
 
 // Bot login
-client.login(process.env.TOKEN)
+client.login(process.env.TOKEN);
