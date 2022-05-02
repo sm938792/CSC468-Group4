@@ -1,0 +1,165 @@
+:root {
+	--green: #00FF00;
+	--white: #FFFFFF;
+	--black: #000000;
+	--greyple: #595281;
+	--blurple: #5865F2;
+	--dbnb: #23272A; /*dark but not black*/
+	--nqb: #23272A; /*not quite black*/
+}
+
+* {
+	color: var(--fontColor);
+	font-family: helvetica;
+  }
+
+/*---------------------main page stuff-------------------------------*/
+
+  header {
+	  background: var(--hbg);
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  display: block;
+	  justify-items: left;
+	  align-items: center;
+  }
+
+  body {
+	  background: var(--bg);
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+  }
+
+  .themer { /*theme changing button*/
+	  height: 50px;
+	  width: 50px;
+	  border-radius: 50%;
+	  border: none;
+	  color: var(--btnFontColor);
+	  background-color: var(--btnBg);
+  }
+  .themer:focus { outline-style: none; }
+
+/*-----------------------login prompt-----------------------*/
+
+#main-holder {
+	width: 80%;
+	height: 40%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: var(--bg);
+	border-radius: 7px;
+	box-shadow: 0px 0px 5px 2px black;
+  }
+  
+  #login-error-msg-holder {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+  }
+  
+  #login-error-msg {
+	width: 23%;
+	text-align: center;
+	margin: 0;
+	padding: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #8a0000;
+	border: 1px solid #8a0000;
+	background-color: #e58f8f;
+	opacity: 0;
+  }
+  
+  #error-msg-second-line {
+	display: block;
+  }
+  
+  #login-form {
+	align-self: flex-start;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+  }
+  
+  .login-form-field::placeholder {
+	color: #3a3a3a;
+  }
+  
+  .login-form-field {
+	border: none;
+	border-bottom: 1px solid #3a3a3a;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	outline: none;
+	padding: 0px 0px 5px 5px;
+  }
+  
+  #login-form-submit {
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background-color: #3a3a3a;
+	cursor: pointer;
+	outline: none;
+  }
+
+
+
+/*-------------------themes--------------------------*/
+  .light-theme {
+	  --bg: var(--white);
+	  --fontColor: var(--black);
+	  --btnBg: var(--black);
+	  --btnFontColor: var(--white);
+  }
+  .dark-theme {
+	  --bg: var(--black);
+	  --fontColor: var(--green);
+	  --btnBg: var(--white);
+	  --btnFontColor: var(--black);
+  }
+  .disc-dark-theme {
+	  --hbg: var(--greyple);
+	  --bg: var(--dbnb);
+	  --fontColor: var(--white);
+	  --btnBg: var(--greyple);
+	  --btnFontColor: var(--black);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+/* not needed for now
+ul {
+	font-family: helvetica;
+}
+
+li {
+	list-style: circle;
+  }
+  
+  .list {
+	list-style: square;
+  }
+  
+  #msg {
+	font-family: monospace;
+  }
+*/
