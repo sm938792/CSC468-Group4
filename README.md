@@ -1,1 +1,2 @@
-# csc468cloud
+# CSC469 Intro Cloud
+Practice branch for kubernetes
