@@ -1,2 +1,2 @@
-# CSC468
+# CSC468 Intro Cloud
 Practice branch for docker
