@@ -21,3 +21,5 @@ Activating the discord bot locally:
 `node ./loadslash.js`
 `node ./index.js`
  5. Input commands as specified in the JS files
+
+(Web UI site elements can be found on the webui branch)
