@@ -11,12 +11,13 @@ Because there is not much to show in the way of cloud-based deployment, there is
 Activating the discord bot locally:
  1. Invite the bot to a Discord server of your choosing
  2. Download everything from the 'discordbot' folder
- 3. In a terminal, run the following installations...
+ 3. In a terminal, run the following installations:
 `npm init`
 `npm install discord.js`
 `npm install dotenv`
 `npm install fs`
 `npm install mongoose`
- 4. Run the JS files...
+ 4. Run the JS files:
 `node ./loadslash.js`
 `node ./index.js`
+ 5. Input commands as specified in the JS files
